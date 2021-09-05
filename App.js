@@ -30,25 +30,6 @@ const App = () => {
   //   return AsyncStorage.getItem('key')
   // }
 
-  // useEffect(async () => {
-  //   await alert("start");
-  //   console.log("eiei")
-  // })
-  // useEffect(() => {
-  //   const asyncFetch = async () => {
-  //     if(!AsyncStorage.getItem("_C")) {
-  //       try {
-  //         await AsyncStorage.setItem("_C", 0)
-  //       } catch (e) {
-  //         console.log(e)
-  //         alert("error");
-  //       }
-  //     }
-  //   }
-  //   asyncFetch();
-  //   setCount(AsyncStorage.getItem("_C"))
-  // }, [])
-
   const onPress = async () => {
     setCount(count + 1);
     await AsyncStorage.setItem('key', count.toString())
