@@ -31,7 +31,7 @@ const App = () => {
   // }
 
   const onPress = async () => {
-    setCount(count + 1);
+    setCount(count + 10);
     await AsyncStorage.setItem('key', count.toString())
   }
   Sound.setCategory('Playback');
